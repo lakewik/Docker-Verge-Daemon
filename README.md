@@ -1,4 +1,4 @@
-![raspi](https://raw.githubusercontent.com/vergecurrency/Docker-Verge-Daemon/master/docker.png)
+![Verge Docker Logo](https://raw.githubusercontent.com/vergecurrency/Docker-Verge-Daemon/master/docker.png)
 
 # Docker-Verge-Daemon
 https://github.com/vergecurrency/verge (official coin source code repo)
