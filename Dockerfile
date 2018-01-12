@@ -3,11 +3,12 @@
 # https://bitcointalk.org/index.php?topic=1365894
 # https://github.com/vergecurrency/verge
 
-RUN apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*
+
 
 FROM ubuntu:latest
 
 MAINTAINER Jeremiah Buddenhagen <bitspill@bitspill.net>
+RUN apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*
 
 RUN sudo add-apt-repository ppa:bitcoin/bitcoin && apt-get update && sudo apt-get install libdb4.8-dev libdb4.8++-dev && apt-get install -y \
     build-essential \
