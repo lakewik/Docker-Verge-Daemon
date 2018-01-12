@@ -11,7 +11,10 @@ MAINTAINER Jeremiah Buddenhagen <bitspill@bitspill.net>
 RUN apt-get update && apt-get install -y sudo software-properties-common && rm -rf /var/lib/apt/lists/*
 
 RUN sudo add-apt-repository ppa:bitcoin/bitcoin && apt-get update && sudo apt-get install libdb4.8-dev libdb4.8++-dev -y && apt-get install -y \
-    build-essential \
+   libtool autotools-dev automake pkg-config libssl-dev zlib1g-dev libz-dev libevent-dev \
+    bsdmainutils git libboost-all-dev libseccomp-dev libcap-dev libminiupnpc-dev libqt5gui5 \
+    libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev \
+    qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev build-essential \
     git \
     libboost-all-dev \
     libdb-dev \
